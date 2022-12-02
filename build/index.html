@@ -14,35 +14,35 @@
     <!-- Bonus! Use documentation to style the nav -->
     <!-- ************************** -->
 
-    <nav class="">
-      <div class="">
-        <a class="" href="#" >Tree-er</a>
-        <button class="" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#" >Tree-er</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="" id="navbarSupportedContent">
-          <ul class="">
-            <li class="">
-              <a class="" aria-current="page" href="#">Home</a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
-            <li class="">
-              <a class="" href="#">Featured</a>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Featured</a>
             </li>
-            <li class="">
-              <a class="" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Learn More
               </a>
-              <ul class="" aria-labelledby="navbarDropdown">
-                <li><a class="" href="#">About</a></li>
-                <li><a class="" href="#">Contact</a></li>
-                <li><hr class=""></li>
-                <li><a class="" href="#">Surprise me!</a></li>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">About</a></li>
+                <li><a class="dropdown-item" href="#">Contact</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Surprise me!</a></li>
               </ul>
             </li>
           </ul>
-          <form class="">
-            <input class="" type="search" placeholder="Search" aria-label="Search">
-            <button class="" type="submit">Search</button>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
           </form>
         </div>
       </div>
@@ -54,11 +54,9 @@
     <!-- ************************** -->
 
     <div class="container-fluid" id="hero">
-      <img src="../assets/wo-geran-de-klerk-qzgN45hseN0-unsplash.png" class="img-fluid" alt="forest view">
-      <h2>Give the gift of more trees</h2>
-      <span>Photo by <a href="https://unsplash.com/@gerandeklerk?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Geran de Klerk</a> on
-        <br/>
-        <a href="https://unsplash.com/s/photos/forrest?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>
+      <img src="https://d3f9k0n15ckvhe.cloudfront.net/wp-content/uploads/2013/09/Angel-Oak_Charlestons-TheDigitel-web.jpg" class="img-fluid" alt="forest view">
+      <h2 class="treephoto">Give the gift of more trees</h2>
+      
     </div>
 
       <!-- ************************** -->
@@ -154,7 +152,7 @@
       <!-- Add class display-4 to h3 -->
       <!-- ************************** -->
 
-      <h3 class="">Best Sellers</h3>
+      <h3 class="display-4">Best Sellers</h3>
 
       <!-- ************************** -->
       <!-- Best Sellers table -->
@@ -220,13 +218,13 @@
           <!-- add class form-control to the first two text inputs -->
           <!-- ************************** -->
 
-          <div class="">
-            <div class="">
-              <label for="name" class="">Name</label>
-              <input type="text" class="" id="name">
+          <div class="mb-3">
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name">
             </div>
-            <label for="email" class="">Email address</label>
-            <input type="email" class="" id="email">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="email">
             <div class="">No trees will be harmed in delivering our newsletters</div>
           </div>
 
@@ -237,9 +235,9 @@
           <!-- add class form-check-input to the checkbox input -->
           <!-- ************************** -->
 
-          <div class="">
-            <input type="checkbox" class="" id="couponsCheck">
-            <label class="" for="couponsCheck">Send me coupons</label>
+          <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="couponsCheck">
+            <label class="form-label" for="couponsCheck">Send me coupons</label>
           </div>
 
           <!-- ************************** -->
@@ -248,7 +246,7 @@
           <!-- ************************** -->
 
           <p>Select frequency of newsletters</p>
-          <select class="" aria-label="Default weekly">
+          <select class="form-select" aria-label="Default weekly">
             <option selected>Weekly</option>
             <option value="1">Daily</option>
             <option value="2">Hourly</option>
@@ -263,16 +261,16 @@
           <!-- add class form-label to the label -->
           <!-- ************************** -->
 
-          <div class="">
-            <input class="" type="checkbox" id="sendInfo" checked>
-            <label class="" for="sendInfo" >Send my info to affiliates</label>
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" id="sendInfo" checked>
+            <label class="form-label" for="sendInfo" >Send my info to affiliates</label>
           </div>
 
           <!-- ************************** -->
           <!-- Submit button add class btn btn-primary to the button -->
           <!-- ************************** -->
 
-          <button type="submit" class="">Submit</button>
+          <button type="submit" class="btn btn-primary">Submit</button>
         </form>
       </div> <!-- closes form div with class of container -->
 
